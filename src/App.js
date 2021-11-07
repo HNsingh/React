@@ -60,13 +60,12 @@ const App = () => {
     }, 2000); 
     
   }
-  
 
   const DecreaseWater = () => {
     let decreaseIntveral;
     let label = 100;
     decreaseIntveral = setInterval(() => {
-      if (waterLabelSize === 0) {
+      if (label === 0) {
         clearInterval(decreaseIntveral);
       }
       label = label - 20;
