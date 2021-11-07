@@ -65,10 +65,10 @@ const App = () => {
     let decreaseIntveral;
     let label = 100;
     decreaseIntveral = setInterval(() => {
+      label = label - 20;
       if (label === 0) {
         clearInterval(decreaseIntveral);
       }
-      label = label - 20;
       setWaterLabelSize(label)
     }, 2000);
       
